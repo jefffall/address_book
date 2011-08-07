@@ -1,4 +1,6 @@
 AddressBook::Application.routes.draw do
+  resources :address_cards
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

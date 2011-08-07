@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @address_card.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @address_card.address %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @address_card.phone %>
+</p>
+
+
+<%= link_to 'Edit', edit_address_card_path(@address_card) %> |
+<%= link_to 'Back', address_cards_path %>

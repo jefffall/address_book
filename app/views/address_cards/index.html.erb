@@ -1,0 +1,27 @@
+<h1>Listing address_cards</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Phone</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @address_cards.each do |address_card| %>
+  <tr>
+    <td><%= address_card.name %></td>
+    <td><%= address_card.address %></td>
+    <td><%= address_card.phone %></td>
+    <td><%= link_to 'Show', address_card %></td>
+    <td><%= link_to 'Edit', edit_address_card_path(address_card) %></td>
+    <td><%= link_to 'Destroy', address_card, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Address card', new_address_card_path %>
